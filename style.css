@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ABCBCB;
+    background-image: url(imagens/back1.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.cabecalho {
+    padding: 5px 0px;
+    display: flex;
+    background: linear-gradient(to right, #241789 60%, #3f7c8500);
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.383);
+}
+
+.logo {
+    width: 55px;
+    margin-left: 70px;
+    border-radius: 50%;
+}
+
+.cabecalho>h1 {
+    color: white;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2.1em;
+}
+
+.cabecalho-nav {
+    display: flex;
+}
+
+.cabecalho-lista {
+    display: flex;
+    padding-right: 70px;
+    list-style: none;
+    gap: 10px;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+li>a {
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffffa5;
+    border-radius: 70px;
+    font-size: 0.85em;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.382);
+}
+
+main {
+    display: flex;
+    margin: auto;
+    width: 800px;
+    height: 340px;
+    margin-top: 100px;
+    box-shadow: 7px 7px 20px #00000057;
+    background-color: rgba(61, 181, 255, 0.511);
+    border-radius: 7px;
+}
+
+.video,
+.descricao {
+    color: rgb(8, 5, 0);
+    width: 400px;
+    height: 320px;
+    margin: auto;
+    padding: 10px;
+}
+
+.entrar {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 40px;
+    border-color: transparent;
+    margin-top: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
+}
+
+.entrar>a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #103eb2;
+    color: whitesmoke;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.7em;
+}
+
+p>a {
+    color: whitesmoke;
+    text-decoration: underline;
+}
