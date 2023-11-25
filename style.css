@@ -4,42 +4,38 @@
 }
 
 body {
-    background-color: #ABCBCB;
-    background-image: url(imagens/back1.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
+    background: linear-gradient( #000000, #4E4E4E);
+    height: 100vh;
 }
 
 .cabecalho {
-    padding: 5px 0px;
+    padding: 2px 0px;
     display: flex;
-    background: linear-gradient(to right, #241789 60%, #3f7c8500);
+    justify-content: space-between;
+    flex-grow: 50px;
+    background-color: #404040;
     align-items: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.383);
 }
 
 .logo {
-    width: 55px;
-    margin-left: 70px;
+    width: 44px;
+    padding: 0 190px 0px 50px ;
     border-radius: 50%;
 }
 
 .cabecalho>h1 {
     color: white;
-    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     font-size: 2.1em;
 }
 
 .cabecalho-nav {
-    display: flex;
 }
 
 .cabecalho-lista {
     display: flex;
-    padding-right: 70px;
+    padding: 0 50px;
     list-style: none;
     gap: 10px;
 }
@@ -62,36 +58,49 @@ li>a {
 main {
     display: flex;
     margin: auto;
-    width: 800px;
-    height: 340px;
+    width: 650px;
+    height: 300px;
     margin-top: 100px;
     box-shadow: 7px 7px 20px #00000057;
-    background-color: rgba(61, 181, 255, 0.511);
+    background: linear-gradient(-120deg, #06B0A6, #048f8810 80%);
     border-radius: 7px;
 }
 
 .video,
 .descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
     color: rgb(8, 5, 0);
-    width: 400px;
-    height: 320px;
+    min-width: 310px;
+    height: 280px;
     margin: auto;
     padding: 10px;
+}
+.descricao h1{
+    font-size: 1.8em;
+    color: white;
+}
+h2{
+    font-size: 1em;
+    color: white;
 }
 
 .entrar {
+    margin: auto;
     display: flex;
     align-items: center;
-    margin: auto;
-    text-align: center;
-    padding: 10px;
     border-radius: 40px;
+    width: 200px;
     border-color: transparent;
     margin-top: 20px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
+
 }
 
 .entrar>a {
+    margin: auto;
     text-decoration: none;
     color: black;
     font-size: 1.1em;
@@ -103,7 +112,7 @@ button:hover {
 }
 
 footer {
-    background-color: #103eb2;
+    background-color: #059389b6;
     color: whitesmoke;
     bottom: 0;
     position: fixed;
