@@ -25,7 +25,8 @@
 
 
 body {
-    background: linear-gradient(#000000, #4E4E4E);
+    /* background: linear-gradient(#000000, #4E4E4E); */
+    background: linear-gradient(rgb(225, 220, 220), rgb(141, 140, 140));
     height: 100vh;
 }
 
