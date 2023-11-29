@@ -119,30 +119,30 @@ h2 {
     color: white;
 }
 
-.entrar {
-    margin: auto;
+.bot {
     display: flex;
-    align-items: center;
-    border-radius: 40px;
-    width: 200px;
-    height: 30px;
-    border-color: transparent;
-    margin-top: 20px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.426);
-    font-family: 'roboto';
-    font-weight: 100;
-}
-a>img {
-    width: 15px;
-    padding: 2px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.linkBotao {
-    margin: auto;
-    text-decoration: none;
-    color: black;
-    font-size: 1.1em;
-    font-weight: 500;
+.linklogin, .linkform {
+
+}
+
+.butlogin, .butform {
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    align-items: center;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
+}
+
+.bot img{
+    width: 9px;
 }
 
 button:hover {

@@ -31,11 +31,12 @@
     <!-- Conteúdo principal -->
     <main>
         <!-- conteúdo do video -->
-        <div class="video"><iframe width="100%" height="280"
-                src="https://www.youtube.com/embed/z08g9KBXWJ4?si=ZrTQwCWGRhvaKPEp&amp;start=60"
+        <div onplay="aumentar()" class="video">
+            <iframe src="https://www.youtube.com/embed/z08g9KBXWJ4?si=ZrTQwCWGRhvaKPEp&amp;start=60"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowfullscreen>
+            </iframe>
         </div>
         <!-- conteúdo da descrição do video -->
         <div class="descricao">
@@ -44,7 +45,26 @@
                 minus ad, expedita sunt a maxime, itaque corporis enim. Nulla inventore beatae quia placeat veniam.</h2>
 
             <!-- botão principal -->
-            <button class="entrar"><a class="linkBotao" href="inicial.html">Acesse a plataforma</a><a class="linkImagem" href="inicial.html"><img src="imagens\seta-direita.png" alt="seta"></a></button>
+            <div class="bot">
+                <!-- <button class="entrar">
+                    <a class="linkBotao" href="http://localhost/integraaprendiz.github.io/login.php">login</a>
+                    <a class="linkImagem" href="http://localhost/integraaprendiz.github.io/login.php"><img src="imagens\seta-direita.png" alt="seta"></a>
+                </button>
+
+                <a class="entrar" href="http://localhost/integraaprendiz.github.io/formulario.php">
+                    <button class="entrar">
+                        cadastre-se
+                        <img src="imagens\seta-direita.png" alt="seta">
+                    </button>
+                </a> -->
+                <a class="linklogin" href="http://localhost/integraaprendiz.github.io/login.php">
+                    <button class="butlogin">Login <img src="imagens\seta-direita.png" alt="#"></button>
+                </a>
+
+                <a class="linkform" href="http://localhost/integraaprendiz.github.io/formulario.php">
+                    <button class="butform">inscrever-se <img src="imagens\seta-direita.png" alt="#"></button>
+                </a>
+            </div>
         </div>
 
     </main>
@@ -56,5 +76,13 @@
                 href="https://www.instagram.com/a.turma118/"><strong>Turma 118</strong></a> / tarde</p>
     </footer>
 </body>
+
+<script>    
+    var vide = window.document.getElementsByTagName("iframe")
+
+    function aumentar() {
+        window.document.getElementsByTagName("iframe").style = "width: 400px;";
+    };
+</script>
 
 </html>

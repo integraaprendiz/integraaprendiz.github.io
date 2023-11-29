@@ -51,7 +51,7 @@
     </style>
 </head>
 <body>
-    <a href="home.php">Voltar</a>
+    <a href="index.html">Voltar</a>
     <div class="telalogin">
         <h1>Login</h1>
         <form action="testelogin.php" method="POST">
