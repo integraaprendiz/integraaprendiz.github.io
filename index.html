@@ -29,9 +29,9 @@
     </header>
 
     <!-- Conteúdo principal -->
-    <main>
+    <main class="contPrincipal">
         <!-- conteúdo do video -->
-        <div onplay="aumentar()" class="video">
+        <div class="video">
             <iframe src="https://www.youtube.com/embed/z08g9KBXWJ4?si=ZrTQwCWGRhvaKPEp&amp;start=60"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -70,19 +70,11 @@
     </main>
 
     <!-- rodapé -->
-    <footer>
+    <footer class="rodapeInd">
         <p>Site criado por <a target="_blank" href="https://www.instagram.com/josefilho_17/"><strong>José
                     Aparecido</strong></a> e <a href="https://www.instagram.com/pedro_.manoel/"><strong>Pedro Manoel</strong></a> para o projeto integrador do curso de administração. <a target="_blank"
                 href="https://www.instagram.com/a.turma118/"><strong>Turma 118</strong></a> / tarde</p>
     </footer>
 </body>
-
-<script>    
-    var vide = window.document.getElementsByTagName("iframe")
-
-    function aumentar() {
-        window.document.getElementsByTagName("iframe").style = "width: 400px;";
-    };
-</script>
 
 </html>
