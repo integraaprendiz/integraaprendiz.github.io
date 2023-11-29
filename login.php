@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/login/loginstyle.css">
     <title>Login</title>
     <style>
         body{
             
             font-family: Arial, Helvetica, sans-serif;
             background-image:linear-gradient(45deg, cyan,yellow);
-            display: flex;
+            display:inline;
             justify-content: center;
             
         
@@ -37,7 +36,7 @@
             font-size: 15px;
             border-radius: 7px;
         }
-        button{
+        .inputSubmit{
             background-color:  dodgerblue;
             border:none;
             padding: 15px;
@@ -46,19 +45,22 @@
             color: aliceblue;
             cursor: pointer;
         }
-        button:hover{
+        .inputSubmit:hover{
             background-color: deepskyblue;
         }
     </style>
 </head>
 <body>
+    <a href="home.php">Voltar</a>
     <div class="telalogin">
         <h1>Login</h1>
-        <input type="text" placeholder="Nome">
+        <form action="testelogin.php" method="POST">
+        <input type="text" name="email" placeholder="Email">
         <br><br>
-        <input type="password" placeholder="Senha">
+        <input type="password" name="senha" placeholder="senha">
         <br><br>
-        <button class="enviar">Enviar</button>
+        <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+        </form>
     </div>
 </body>
 </html>

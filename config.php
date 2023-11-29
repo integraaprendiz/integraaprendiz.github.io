@@ -1,7 +1,7 @@
 <?php
     
 
-    $dbHost = 'Localhost';
+    $dbHost = 'localhost';
     $dbUsername ='root';
     $dbPassword ='';
     $dataName ='formulario-integra';

@@ -19,13 +19,17 @@
 
         $nome = $_POST['nome'];
         $email = $_POST['email'];
+        $senha = $_POST['senha'];
         $telefone = $_POST['telefone'];
         $genero = $_POST['genero'];
         $data_nascimento = $_POST['data_nascimento'];
         $cidade = $_POST['cidade'];
         $estado = $_POST['estado'];
         $endereco = $_POST['endereco'];
-        $result = mysqli_query($conexao, "insert into usuarios(nome,email,telefone,sexo,data_nasc,cidade,estado,endereco) values('$nome','$email','$telefone' ,'$genero' ,'$data_nascimento','$cidade','$estado', '$endereco')");
+
+        $result = mysqli_query($conexao,"INSERT INTO usuarios(nome,email,senha,telefone,sexo,data_nasc,cidade,estado,endereco) VALUES('$nome','$email','$senha','$telefone','$genero','$data_nascimento','$cidade','$estado','$endereco')");
+
+        header('Location: login.php');
     }
 
 
@@ -38,19 +42,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/cadastro/formulariostyle.css">
     <title>Cadastro</title>
     <style>
         body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,54,71));
-    display: flex;
+    display: inline;
     justify-content: center;
 }
 .box{
     color:white;
     position: absolute;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.1);
     padding: 15px;
     border-radius: 15px;
     width: 60%;
@@ -99,6 +102,7 @@ legend{
     </style>
 </head>
 <body>
+    <a href="/integraaprendiz/home.php">Voltar</a>
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>
@@ -111,6 +115,12 @@ legend{
                 <div class="inputbox">
                     <input type="email" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelinput">Email</label>
+
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <label for="senha" class="labelinput">senha</label>
 
                 </div>
                 <br><br>

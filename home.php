@@ -36,6 +36,7 @@
 </head>
 <body>
     <h2>PLATAFORMA</h2>
+    
     <div class="box">
         <a href="/integraaprendiz/login.php" >Login</a>
         <a href="/integraaprendiz/formulario.php">Cadastres-se</a>
