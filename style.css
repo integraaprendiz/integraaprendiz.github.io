@@ -40,6 +40,11 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.526);
 }
 
+h1>a {
+    text-decoration: none;
+    color: white;
+}
+
 .logo {
     width: 44px;
     padding: 0 190px 0px 50px;
@@ -168,9 +173,9 @@ p>a {
 #cursos {
     display: flex;
     flex-direction: column;
-    background-color: gray;
-    width: 20%;
-    height: 93vh;
+    background-color: #262626;
+    width: 350px;
+    height: 93.1vh;
 }
 
 #plataformaPrincipal {
@@ -180,28 +185,49 @@ p>a {
     width: 100%;
 }
 
-.cursos {
-
-}
-
 .cursosLista {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-top: 7px;
+    margin-top: 5px;
     
 }
 
 .lista {
-    font-family: 'roboto', sans-serif;
-    font-size: 0.8em;
+    font-family: 'oxanium', sans-serif;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
     background-color: var(--azulMedio);
     display: flex;
     flex-direction: row-reverse;
     padding: 10px 5px;
+    cursor: pointer;
 }
 .lista:hover {
     background-color: var(--azulMaisClaro);
     font-weight: bold;
     transform: scale(1.1);
+    border-radius: 0px 5px 5px 0px;
+    color: black;
+}
+
+.cursosConteudo {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}  
+
+.cursosConteudos {
+    border-radius: 7px;
+    background: linear-gradient(90deg, #00000000, var(--azulescuro), var(--azulMedio));
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.descricaoVideo {
+    margin: 10px;
+    text-indent: 5px;
+    color: white;
 }
