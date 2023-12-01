@@ -25,8 +25,8 @@
 
 
 body {
-    /* background: linear-gradient(#000000, #4E4E4E); */
-    background: linear-gradient(rgb(225, 220, 220), rgb(141, 140, 140));
+    background: linear-gradient(#000000, #4E4E4E);
+    /* background: linear-gradient(rgb(225, 220, 220), rgb(141, 140, 140)); */
     height: 100vh;
 }
 
@@ -66,7 +66,7 @@ body {
     gap: 10px;
 }
 
-li:hover {
+.cabecalho-lista>li:hover {
     transform: scale(1.1);
 }
 
@@ -125,10 +125,6 @@ h2 {
     justify-content: space-around;
 }
 
-.linklogin, .linkform {
-
-}
-
 .butlogin, .butform {
     font-family: 'roboto', sans-serif;
     font-weight: bold;
@@ -174,10 +170,38 @@ p>a {
     flex-direction: column;
     background-color: gray;
     width: 20%;
-    height: 100vh;
+    height: 93vh;
 }
 
 #plataformaPrincipal {
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    height: 93vh;
     width: 100%;
+}
+
+.cursos {
+
+}
+
+.cursosLista {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 7px;
+    
+}
+
+.lista {
+    font-family: 'roboto', sans-serif;
+    font-size: 0.8em;
+    background-color: var(--azulMedio);
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 5px;
+}
+.lista:hover {
+    background-color: var(--azulMaisClaro);
+    font-weight: bold;
+    transform: scale(1.1);
 }
