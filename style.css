@@ -71,7 +71,7 @@ h1>a {
     gap: 10px;
 }
 
-.cabecalho-lista>li:hover {
+.cabecalho-lista> .cab:hover {
     transform: scale(1.1);
 }
 
@@ -87,7 +87,9 @@ li>a {
 .contPrincipal {
     display: flex;
     margin: auto;
-    width: 650px;
+    min-width: 650px;
+    max-width: 650px;
+    /* width: 650px; */
     height: 300px;
     margin-top: 100px;
     box-shadow: 7px 7px 20px #00000057;
@@ -146,7 +148,10 @@ h2 {
     width: 9px;
 }
 
-button:hover {
+.butlogin:hover {
+    transform: scale(1.1);
+}
+.butform:hover {
     transform: scale(1.1);
 }
 
@@ -192,7 +197,7 @@ p>a {
     
 }
 
-.lista {
+#lista0, #lista1, #lista2, #lista3, #lista4, #lista5 {
     font-family: 'oxanium', sans-serif;
     font-size: 1em;
     color: white;
@@ -202,13 +207,12 @@ p>a {
     flex-direction: row-reverse;
     padding: 10px 5px;
     cursor: pointer;
+    border-color: transparent;
 }
-.lista:hover {
-    background-color: var(--azulMaisClaro);
-    font-weight: bold;
+.cursos> button:hover {
     transform: scale(1.1);
     border-radius: 0px 5px 5px 0px;
-    color: black;
+    font-weight: bolder;
 }
 
 .cursosConteudo {
