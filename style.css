@@ -110,20 +110,27 @@ li>a {
     padding: 10px;
 }
 
-
+.logoGrande {
+    filter: drop-shadow(0px 0px 8px #0386d7ae);
+}
 
 .descricao h1 {
     font-family: 'pacifico';
     font-weight: 100;
-    font-size: 1.8em;
+    font-size: 1.7em;
     color: white;
     height: 20%;
+    filter: drop-shadow(2px 2px 8px #000000bb);
+
+
 }
 
 h2 {
-    height: 50%;
+    height: 60%;
     font-size: 1em;
+    font-weight: lighter;
     color: white;
+    filter: drop-shadow(2px 2px 8px #000000bb);
 }
 
 .bot {

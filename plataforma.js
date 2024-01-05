@@ -40,8 +40,9 @@ tabs.forEach(function(tab) {
       this.style.fontWeight = 'bold';
       this.style.backgroundColor = '#18C8FF';
       this.style.color = '#000';
-      this.style.transform = 'scale(1.1)'; // Escala aumentada
+      this.style.transform = 'scale(1.05)'; // Escala aumentada
       this.style.borderRadius = '0px 5px 5px 0px';
+      this.style.boxShadow = '0px 0px black';
   
       // Oculte todo o conteúdo
       var contents = document.querySelectorAll('.cursosConteudo');
@@ -54,3 +55,5 @@ tabs.forEach(function(tab) {
       tabContent.style.display = 'block';
     });
 });
+
+tabs[0].click();
