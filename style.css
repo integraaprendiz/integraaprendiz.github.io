@@ -190,14 +190,14 @@ p>a {
     width: 100%;
 }
 
-.cursosLista {
+.cursos {
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
+    max-width: 180px;
     
 }
 
-#lista0, #lista1, #lista2, #lista3, #lista4, #lista5 {
+.lista{
     font-family: 'oxanium', sans-serif;
     font-size: 1em;
     color: white;

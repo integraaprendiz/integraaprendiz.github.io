@@ -27,14 +27,46 @@
 
     <main class="plataformaPrincipal" id="plataformaPrincipal">
         <div class="cursos" id="cursos">
-            <button id="lista0" onclick="adm()">administração</button>
-            <button id="lista1" onclick="informatica()">Informática</button>
-            <button id="lista2" onclick="rh()">RH / DP</button>
-            <button id="lista3" onclick="logistica()">Logística</button>
-            <button id="lista4" onclick="financeiro()">Financeiro</button>
-            <button id="lista5" onclick="marketing()">Marketing</button>
+            <button class="lista" data-target="#conteudoAdm">administração</button>
+            <button class="lista" data-target="#conteudoInf">Informática</button>
+            <button class="lista" data-target="#conteudoRh">RH / DP</button>
+            <button class="lista" data-target="#conteudoLog">Logística</button>
+            <button class="lista" data-target="#conteudoFin">Financeiro</button>
+            <button class="lista" data-target="#conteudoMkt">Marketing</button>
         </div>
-        <div class="cursosConteudo">
+        <div id="conteudoAdm" class="cursosConteudo" style="display: none;">
+            <div class="cursosConteudos">
+                <div class="videoPrincipal">
+                    <iframe width="250" src="https://www.youtube.com/embed/by9xhHq426c?si=9ykePvYmZmpVynV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="descricaoVideo">
+                    <p>Descrição: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quod porro, aspernatur consequatur debitis iusto ducimus non et repellendus fugiat exercitationem. Laudantium, dolorum recusandae. Consequuntur ipsam a accusantium rem quam.</p>
+                </div>
+            </div>
+
+            <div class="cursosConteudos">
+                <div class="videoPrincipal">
+                    <iframe width="250" src="https://www.youtube.com/embed/by9xhHq426c?si=9ykePvYmZmpVynV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="descricaoVideo">
+                    <p>Descrição: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quod porro, aspernatur consequatur debitis iusto ducimus non et repellendus fugiat exercitationem. Laudantium, dolorum recusandae. Consequuntur ipsam a accusantium rem quam.</p>
+                </div>
+            </div>
+
+            <div class="cursosConteudos">
+                <div class="videoPrincipal">
+                    <iframe width="250" src="https://www.youtube.com/embed/by9xhHq426c?si=9ykePvYmZmpVynV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="descricaoVideo">
+                    <p>Descrição: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis iure, aliquam dolor sit, placeat nesciunt magnam, ipsam dignissimos sequi sint rem! Aspernatur dolores veritatis delectus quae tempore rem nisi doloribus?</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- conteudo de informática -->
+
+        <div id="conteudoInf" class="cursosConteudo" style="display: none;">
             <div class="cursosConteudos">
                 <div class="videoPrincipal">
                     <iframe width="250" src="https://www.youtube.com/embed/by9xhHq426c?si=9ykePvYmZmpVynV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -69,26 +101,7 @@
 
     </footer>
 
-    <script>
-        function adm(){
-            const meuBt = document.getElementById("lista0");
-            // document.getElementById("lista").style.background-color = black;
-            meuBt.style.backgroundColor = "#18C8FF";
-            meuBt.style.fontWeight = "bold";
-            meuBt.style.transform = "scale(1.1)";
-            meuBt.style.borderRadius = "0px 5px 5px 0px";
-            meuBt.style.color = "black";
-        }
-        function informatica(){
-            const meuBt = document.getElementById("lista1");
-            // document.getElementById("lista").style.background-color = black;
-            meuBt.style.backgroundColor = "#18C8FF";
-            meuBt.style.fontWeight = "bold";
-            meuBt.style.transform = "scale(1.1)";
-            meuBt.style.borderRadius = "0px 5px 5px 0px";
-            meuBt.style.color = "black";
-        }
-    </script>
+    <script type="text/javascript" src="plataforma.js"></script>
 </body>
 
 </html>
